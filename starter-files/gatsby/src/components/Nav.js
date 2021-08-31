@@ -17,6 +17,7 @@ const NavStyles = styled.nav`
     text-align: center;
     list-style: none;
     align-items: center;
+    margin-top: -6rem;
   }
   li {
     --rotate: -1deg;
@@ -39,6 +40,9 @@ const NavStyles = styled.nav`
     font-size: 3rem;
     text-decoration: none;
     &:hover {
+      color: var(--red);
+    }
+    &[aria-current="page"] {
       color: var(--red);
     }
   }
