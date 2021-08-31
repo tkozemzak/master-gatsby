@@ -1,12 +1,13 @@
 import React from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
+import "normalize.css";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <div>
       <Nav />
-      <p>Page Content</p>
+      {children}
       <Footer />
     </div>
   );
