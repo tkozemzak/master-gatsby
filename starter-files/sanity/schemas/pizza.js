@@ -34,7 +34,7 @@ export default {
       title: "Price",
       type: "number",
       description: "Price of the pizza in cents",
-      validation: (Rule) => Rule.min(1000),
+      validation: (Rule) => Rule.required(),
       // TODO: Add custom input component
     },
   ],
