@@ -37,7 +37,6 @@ const SlicemasterStyles = styled.div`
 
 const SlicemastersPage = ({ data }) => {
 	const slicemasters = data.slicemasters.nodes;
-	console.log('slicemaster', slicemasters);
 	return (
 		<>
 			<SlicemasterGrid>
