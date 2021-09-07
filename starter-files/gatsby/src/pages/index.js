@@ -7,6 +7,7 @@ const HomePage = () => {
 			<Helmet>
 				<title>Slick's Slices</title>
 			</Helmet>
+
 			<h1> Home </h1>
 		</>
 	);
