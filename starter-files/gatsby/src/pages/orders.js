@@ -1,11 +1,13 @@
-import React from "react";
+import React from 'react';
+import SEO from '../components/SEO';
 
 const OrdersPage = () => {
-  return (
-    <>
-      <h1>Orders Page</h1>
-    </>
-  );
+	return (
+		<>
+			<SEO title='Order a Pizza!' />
+			<h1>Orders Page</h1>
+		</>
+	);
 };
 
 export default OrdersPage;
