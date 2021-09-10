@@ -53,21 +53,21 @@ const Nav = () => {
 		<NavStyles>
 			<ul>
 				<li>
-					<Link to="/"> Hot Now </Link>
+					<Link to='/'> Hot Now </Link>
 				</li>
 				<li>
-					<Link to="/pizzas"> Pizza Menu </Link>
+					<Link to='/pizzas'> Pizza Menu </Link>
 				</li>
 				<li>
-					<Link to="/">
+					<Link to='/'>
 						<Logo />
 					</Link>
 				</li>
 				<li>
-					<Link to="/slicemasters"> SliceMasters </Link>
+					<Link to='/slicemasters'> SliceMasters </Link>
 				</li>
 				<li>
-					<Link to="/order"> Order Ahead </Link>
+					<Link to='/order'> Order Ahead </Link>
 				</li>
 			</ul>
 		</NavStyles>
