@@ -66,6 +66,7 @@ const OrdersPage = ({ data }) => {
 										return (
 											<button
 												type='button'
+												key={size}
 												onClick={() =>
 													addToOrder({
 														id: pizza.id,

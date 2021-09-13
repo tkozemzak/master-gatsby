@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, navigate } from 'gatsby';
 import styled from 'styled-components';
 import Logo from './Logo';
+import OrderContext from './OrderContext';
 
 const NavStyles = styled.nav`
 	margin-bottom: 3rem;
@@ -49,6 +50,8 @@ const NavStyles = styled.nav`
 `;
 
 const Nav = () => {
+	const [order] = useContext(OrderContext);
+
 	return (
 		<NavStyles>
 			<ul>
@@ -67,7 +70,16 @@ const Nav = () => {
 					<Link to='/slicemasters'> SliceMasters </Link>
 				</li>
 				<li>
-					<Link to='/order'> Order Ahead </Link>
+					<Link to='/order'>Order Ahead</Link>
+					{order.length ? (
+						<p style={{ fontSize: '10px' }}>
+							(
+							{order.length === 1
+								? `${order.length} item in cart`
+								: `${order.length} items in cart`}
+							)
+						</p>
+					) : null}
 				</li>
 			</ul>
 		</NavStyles>
